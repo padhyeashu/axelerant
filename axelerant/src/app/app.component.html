@@ -1,5 +1,13 @@
 <div class="container">
   <header class="main-header">
+    <span class="menu-icon" (click)="showRespMenu = !showRespMenu"></span>
+    <div class="menu-wrapper" *ngIf="showRespMenu">
+      <a href="#" class="active">About</a>
+      <a href="#">Services</a>
+      <a href="#">Solutions</a>
+      <a href="#">Blogs</a>
+    </div>
+
     <a href="#" class="company-logo">COMPANY <span class="logo-text">LOGO</span></a>
     <nav class="navbar">
       <a href="#" class="active">About</a>
@@ -8,6 +16,7 @@
       <a href="#">Blogs</a>
       <button class="nav-button"><span class="comment-icon"></span>Get In Touch</button>
     </nav>
+    <span class="icon-button"></span>
   </header>
   <section class="banner">
     <div class="banner-content">
@@ -45,4 +54,26 @@
     </div>
   </section>
 
+  <section class="form-section">
+    <h1>Convinced To Work With Us?</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <form>
+      <div class="input-fields">
+        <input type="text" placeholder="Full name"/>
+        <input type="email" placeholder="Email"/>
+        <input type="text" placeholder="Phone number"/>
+      </div>
+      <div class="textarea-container"><textarea placeholder="Message in brief" rows="4"></textarea></div>
+      <input type="submit" class="btn-submit"/>
+    </form>
+  </section>
+
+  <footer class="footer">
+      <div class="copyrights">&#169; 2020. All rights reserved</div>
+      <div class="follow-us">
+        <a href="#"><span class="fb"></span></a>
+        <a href="#"><span class="li"></span></a>
+        <a href="#"><span class="tw"></span></a>
+      </div>
+    </footer>
 </div>
